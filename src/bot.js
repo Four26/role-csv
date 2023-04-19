@@ -6,7 +6,9 @@ const client = new discord.Client({ intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_
 const commandName = config.commandName;
 const { generateCSV } = require('./functions/csvGenerator');
 
-client.on('error', (error) => consoleLog(error.message, 'ERROR'));
+client.on('error', (error) => {
+    consoleLog(error.message, 'ERROR');
+});
 
 client.on('ready', () => {
     console.log('Ready and connected to Discord.')
