@@ -1,13 +1,4 @@
 {
-    "allowedRoles": [
-        "owner",
-        "admin",
-        "moderator",
-        "helper",
-        "member",
-        "verified",
-        "SSCT KAWATANS"
-    ],
-    "commandName": "generatecsv",
+    "commandName": "csv",
     "commandPrefix": "/"
 }
